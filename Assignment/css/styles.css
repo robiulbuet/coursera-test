@@ -7,40 +7,38 @@
 .navbar-toggle{
 	position: relative;
 	float: right;
-	padding: 9px 10px;
+	padding: 10px 10px;
 	margin-top: 8px;
 	margin-right: 15px;
 	margin-bottom: 8px;
-	background-color: transparent;
-	border: 1px solid transparent;
+	border: 2px #000000;
 	border-radius: 4px;
+  background-color: darkslategrey;
 }
 
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: black;
 }
 
-h1 {
-  margin-top: 50px;
-  margin-bottom: 60px;
-  text-align: center;
-}
 
-h2 {
-  margin-top: 5px;
-  margin-bottom: 6px;
-  text-align: center;
-  font-weight: bold;
-  font-color: black;
+button{
+  margin: 0;
+  font: inherit;
+  color: white;
 }
-
+button{
+  overflow: visible;
+}
 
 .nav-h1{
-	font-family: candara;
-	font-weight: bold;
-	font-size: 28px;
-	color: black;
+  font-family: candara;
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
 }
 
 
@@ -64,6 +62,28 @@ h2 {
   color: white;
   font-weight: bold;
 }
+
+
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-color: black;
+}
+
 
 
 .box{
