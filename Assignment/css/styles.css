@@ -1,21 +1,20 @@
 #header-nav{
 	background-color: darkgrey;
-	border-radius: 0;
 	border: 3px solid black; 
-
+  border-radius: 0px;
 }
-.navbar-toggle{
-	position: relative;
-	float: right;
-	padding: 10px 10px;
-	margin-top: 8px;
-	margin-right: 15px;
-	margin-bottom: 8px;
-	border: 2px #000000;
-	border-radius: 4px;
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
   background-color: darkslategrey;
+  background-image: none;
+  border: 3px solid transparent;
+  border-radius: 6px;
 }
-
 .navbar-toggle .icon-bar {
   display: block;
   width: 30px;
@@ -24,23 +23,59 @@
   background-color: black;
 }
 
-
-button{
-  margin: 0;
-  font: inherit;
-  color: white;
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 }
-button{
-  overflow: visible;
+
+.navbar-nav {
+  margin: 0px 0px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
 }
 
-.nav-h1{
-  font-family: candara;
-  font-weight: bold;
-  font-size: 28px;
+
+.navbar-brand {
+  padding: 25px;
+}
+
+
+.navbar-brand h1{
+  font-family: 'Lora', serif;
   color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.75;
+
 }
 
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+
+.navbar-brand p{
+  color:#000;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  margin-top: 15px;
+}
+
+.navbar-brand p span{
+  vertical-align: middle;
+}
 
 
 #nav-list {
@@ -96,7 +131,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-p {
+p{
   font-family: candara;
   font-weight: bold;
   font-size: 18px;
@@ -105,7 +140,7 @@ p {
   padding-right: 10px;
 }
 
-.row {
+.row{
 	margin-right: 0px;
 	margin-left: 0px;
   width: 100%;
@@ -154,7 +189,7 @@ p {
   }
 }
 /********** Medium devices only **********/
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -198,7 +233,7 @@ p {
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -281,3 +316,4 @@ p {
     width: 8.33333333%;
   }
 }
+
