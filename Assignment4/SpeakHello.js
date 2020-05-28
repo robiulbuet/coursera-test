@@ -21,14 +21,16 @@
 
 
 
-(function(name) {
+(function(window) {
 	var helloSpeaker = {};
 	var speakWord = "Hello";
-	helloSpeaker.speak=function(){
+	helloSpeaker.speak=function speak(name){
 		console.log(speakWord + " " + name);
-	}
-	name.helloSpeaker = name;
-})(name);
+	};
+
+	window.helloSpeaker = helloSpeaker;
+	
+})(window);
 
 
 
